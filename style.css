@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Font Awesome 5 Brands";
+}
+body {
+  background-color: antiquewhite;
+}
+.nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  background-color: aliceblue;
+}
+
+.nav-center .social-icons {
+  display: none;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.nav-toggle {
+  background-color: transparent;
+  border: transparent;
+  font-size: 20px;
+  color: hsl(205, 89%, 70%);
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.nav-toggle:hover {
+  transform: rotate(90deg);
+  color: hsl(205, 77%, 27%);
+}
+.links li {
+  padding: 0.5rem 1rem;
+  margin-bottom: 10px;
+}
+.links li:hover {
+  background-color: hsl(205, 89%, 70%);
+  transition: 1s;
+}
+.links {
+  height: 0px;
+  overflow: hidden;
+}
+.show-link {
+  height: 100%;
+}
+.links a {
+  color: hsl(209, 34%, 30%);
+  font-weight: 200;
+  text-decoration: none;
+  letter-spacing: 0.25rem;
+  margin: 0 8px;
+
+  padding: 0.5rem 1rem;
+  font-size: 13px;
+  text-transform: lowercase;
+}
+.links a:hover {
+  color: hsl(205, 89%, 70%);
+}
+.social-icons a {
+  color: hsl(205, 89%, 70%);
+  margin: 0px 0.5rem;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 800px) {
+  .nav-center {
+    padding: 16px;
+    margin: 0px 68px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+  }
+  .social-icons {
+    display: flex;
+    list-style: none;
+  }
+}
